@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agriculture Product E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Agriculture Product</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="Home"class="banner">
+        <img src="images/banner 2.jpg" alt="Agriculture Banner">
+        <p class="abi">At Agriculture Product, we pride ourselves on offering high-quality agricultural products that are not only essential to everyday life but are also sourced sustainably. Our mission is to bring fresh, nutritious, and environmentally friendly products straight from the farm to your home. With our wide range of products — cooking oils, vegetables, cereals, and pulses — we aim to make healthy living easy and accessible for everyone.
+
+            We work closely with farmers who follow ethical and sustainable practices to bring you the best of nature, ensuring that you receive products that are free from harmful chemicals and full of natural goodness. Join us in supporting local agriculture and improving your daily diet with fresh, healthy food that’s good for you and good for the planet.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="Products"class="products">
+        <h2>Our Agriculture Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="images/jonathan-pielmayer-eFFnKMiDMGc-unsplash.jpg" alt="Product 1">
+                <h3>Carrot</h3>
+                <p>Price: 66 per kg</p>
+                <button class="add-to-cart" onclick="addToCart('Product 1', 25)">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="images/pexels-pixabay-533280.jpg" alt="Product 2">
+                <h3>Tomato</h3>
+                <p>Price: 20 per kg</p>
+                <button class="add-to-cart" onclick="addToCart('Product 2', 30)">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="images/onion-1430062_1280.jpg" alt="Product 3">
+                <h3>Onion</h3>
+                <p>Price: 59 per kg</p>
+                <button class="add-to-cart" onclick="addToCart('Product 3', 20)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items in cart</p>
+        </div>
+        <div id="cart-total">
+            <p>Total: rs0.00</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agriculture Schemes | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
